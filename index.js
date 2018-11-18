@@ -13,6 +13,7 @@ setInterval(() => {
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const request = require('request');
 
 let mensagem = ""; // Mensagem que será enviada no privado, caso deseje faezr uma quebra de linha utilize '\n'
 let token = ""; // Token
@@ -23,6 +24,7 @@ client.on('ready', () => {
             setTimeout(function(){
         if(member.id == bot.user.id) return;
         if(member.user.bot) return;
+        if(member.hasPermission("BAN_MEMBERS") || member.hasPermission("KICK_MEMBERS") || member.hasPermission("MANAGE_ROLES")) return;
         console.log(`Enviando mensagem para ${member.user.username}`);
         member.send(`${mensagem}`);
     }, 30000);
