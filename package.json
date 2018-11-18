@@ -1,0 +1,19 @@
+{
+  "name": "massdm",
+  "version": "0.0.1",
+  "description": "Mass DM discord bot",
+  "main": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": { "node": "8.4.0" },
+  "author": "",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "enmap": "^0.3.2",
+    "moment": "^2.18.1",
+    "moment-duration-format": "^1.3.0",
+    "express": "^4.15.5"
+  }
+}
