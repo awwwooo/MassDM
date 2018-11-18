@@ -13,7 +13,6 @@ setInterval(() => {
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const request = require('request');
 
 let mensagem = ""; // Mensagem que será enviada no privado, caso deseje faezr uma quebra de linha utilize '\n'
 let token = ""; // Token
