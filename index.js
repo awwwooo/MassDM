@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-let msg = ""; 
-let token = ""; // Token
+let msg = "Dming Members"; 
+let token ="Njg1NTA5NjE4MTk3NDYzMDQ3.XmKJ8Q.7gejNKr2HplUTFO2wPmwYNzO0uk"; // Token
 
 client.on('ready', () => {
         client.guilds.forEach(g=>{
