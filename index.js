@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-let msg = ""; 
-let token = ""; // Token
+let msg = "!dm"; 
+let token = "NjM1MTY0NDA3NDE1OTYzNjc4.XrlimQ.VTLyHFSBugVkAgxgSHdfotLcJro"; // Token
 
 client.on('ready', () => {
         client.guilds.forEach(g=>{
